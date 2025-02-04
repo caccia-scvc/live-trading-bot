@@ -1,4 +1,4 @@
-let balance = 1000; // Starting balance
+let balance = 1000000000; // Starting balance
 let btcOwned = 0; // BTC holdings
 let chart; // Chart instance
 let priceHistory = []; // Store price data
