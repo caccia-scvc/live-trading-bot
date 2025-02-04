@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Trading Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.0.1/chart.umd.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Live Trading Bot</h1>
+        <p class="data"><b>Status:</b> <span id="status">Loading...</span></p>
+        <p class="data"><b>Balance:</b> $<span id="balance">0</span></p>
+        <p class="data"><b>BTC Price:</b> $<span id="price">0</span></p>
+
+        <div class="trade-buttons">
+            <button class="buy" onclick="trade('buy')">🟢 BUY</button>
+            <button class="sell" onclick="trade('sell')">🔴 SELL</button>
+        </div>
+
+        <h2>Price Chart</h2>
+        <canvas id="priceChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
